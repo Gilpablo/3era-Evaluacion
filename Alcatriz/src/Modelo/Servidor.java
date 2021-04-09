@@ -9,6 +9,20 @@ package Modelo;
  *
  * @author daw-B
  */
-public class Servidor {
-    
+public class Servidor extends Equipo{
+    private String ssoo;
+    private int anoCompra;
+
+    public Servidor(String ssoo, int anoCompra, String cod, String ubicacion, double precio, boolean protegido) {
+        super(cod, ubicacion, precio, protegido);
+        this.ssoo = ssoo;
+        this.anoCompra = anoCompra;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " Servidor{" + "ssoo=" + ssoo + ", anoCompra=" + anoCompra + '}';
+    }
+
+
 }

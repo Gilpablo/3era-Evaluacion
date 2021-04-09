@@ -5,10 +5,31 @@
  */
 package Controlador;
 
+import Modelo.Equipo;
+import java.util.ArrayList;
+
 /**
  *
  * @author daw-B
  */
 public class Controlador {
-    
+    private ArrayList<Equipo> vEquipos;
+
+    public Controlador() {
+        this.vEquipos = new ArrayList();
+    }
+
+    public void anadirEquipo(Equipo e) {
+       vEquipos.add(e);
+    }
+
+    @Override
+    public String toString() {
+        String texto = "";
+        for (Equipo v : vEquipos) {
+            texto += v.toString() + "\n";
+        }
+        return texto ;
+    }
+
 }
