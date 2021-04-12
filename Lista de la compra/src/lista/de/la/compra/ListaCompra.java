@@ -156,13 +156,16 @@ public class ListaCompra extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonBorrarListaMouseClicked
 
     private void jButtonAñadirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonAñadirMouseClicked
+        
+        
+        
         String productos;
         
         productos = jTextFieldProductos.getText();
         
         modeloCompra.addElement(productos);
         
-        
+        jTextFieldProductos.setText("");
     }//GEN-LAST:event_jButtonAñadirMouseClicked
 
     private void jTextFieldProductosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextFieldProductosMouseClicked
